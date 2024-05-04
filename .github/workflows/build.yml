@@ -8,8 +8,6 @@ on:
       - build.gradle
       - gradle.properties
       - settings.gradle
-    tags-ignore:
-      - releases/**
 
 jobs:
   build:
