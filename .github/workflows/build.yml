@@ -2,6 +2,7 @@ name: CI For ExampleMod
 on:
   push:
     paths:
+      - .github/workflows/**
       - src/**
       - gradle/scripts/**
       - build.gradle
