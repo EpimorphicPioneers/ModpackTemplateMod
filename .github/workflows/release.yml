@@ -24,10 +24,11 @@ jobs:
         if: ${{ runner.os != 'Windows' }}
         run: chmod +x ./gradlew
 
+      - name: Build with Gradle
+        uses: gradle/actions@v3.3.2
+
       - name: Build
-        uses: gradle/gradle-build-action@v3
-        with:
-          arguments: build
+        run: ./gradlew build
 
       - name: Get Version
         id: var
