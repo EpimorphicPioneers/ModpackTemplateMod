@@ -30,16 +30,23 @@ jobs:
       - name: Build
         run: ./gradlew build
 
+      - name: Read Properties
+        id: 'properties'
+        uses: christian-draeger/read-properties@1.1.1
+        with:
+          path: gradle.properties
+          properties: 'mod_id mod_name'
+
       - name: Get Version
         id: var
         run: |
-          MESSAGE=$(ls build/libs/* | grep sources.jar -v | grep shadow.jar -v | grep slim.jar -v | awk -F 'examplemod-|.jar' '{print $2}')
+          MESSAGE=$(ls build/libs/* | grep sources.jar -v | grep shadow.jar -v | grep slim.jar -v | awk -F '${{ steps.properties.outputs.mod_id }}-|.jar' '{print $2}')
           echo version=$MESSAGE >> $GITHUB_OUTPUT
       
       - name: "publish md mod"
         uses: Kir-Antipov/mc-publish@v3.3.0
         with:
-          name: ExampleMod v${{ steps.var.outputs.version }}
+          name: "${{ steps.properties.outputs.mod_name }} v${{ steps.var.outputs.version }}"
           version: ${{ steps.var.outputs.version }}
           game-versions: 1.20.1
           version-type: release
