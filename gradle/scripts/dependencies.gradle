@@ -24,10 +24,9 @@ dependencies {
 
     // LDLib
     modApi(forge.ldlib.forge) { transitive = false }
-    include(forge.ldlib.forge)
 
     // Registrate
-    modApi(include("com.tterrag.registrate:Registrate:${forge.versions.registrate.get()}"))
+    modApi("com.tterrag.registrate:Registrate:${forge.versions.registrate.get()}")
 
     // Create and its dependencies
     modCompileOnly("com.simibubi.create:create-${libs.versions.minecraft.get()}:${forge.versions.createForge.get()}:all") { transitive = false }
@@ -68,7 +67,6 @@ dependencies {
 
     // Configuration
     modApi(forge.configuration)
-    include(forge.configuration)
 
     // Shimmer
     modImplementation(forge.shimmer.forge) { transitive = false }
