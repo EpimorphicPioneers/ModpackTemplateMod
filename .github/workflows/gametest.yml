@@ -25,4 +25,6 @@ jobs:
         uses: gradle/actions/setup-gradle@v3
 
       - name: Run GameTest
+        env:
+          RUN_SERVER: RUN_SERVER
         run: ./gradlew runGameTestServer

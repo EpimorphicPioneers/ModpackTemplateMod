@@ -22,7 +22,7 @@ dependencyResolutionManagement {
         def reiVersion = "12.0.684"
         def emiVersion = "1.1.4"
         def ae2Version = "15.0.18"
-        def kjsVersion = "2001.6.4-build.120"
+        def kjsVersion = "2001.6.5-build.7"
         def gtmVersion = "1.2.3.a"
 
         // Forge
@@ -39,7 +39,7 @@ dependencyResolutionManagement {
         def architecturyLoomVersion = "1.6-SNAPSHOT"
         def macheteVersion = "1.+"
         def configurationVersion = "2.2.0"
-        def ldLibVersion = "1.0.25.j"
+        def ldLibVersion = "1.0.25.l"
         def mixinextrasVersion = "0.3.2"
         def shimmerVersion = "0.2.2"
         def monomorphismLibVersion = "1.0.10-build.17"
