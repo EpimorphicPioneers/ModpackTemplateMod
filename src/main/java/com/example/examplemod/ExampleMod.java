@@ -10,6 +10,8 @@ import com.example.examplemod.data.ExampleLangHandler;
 import com.gregtechceu.gtceu.utils.FormattingUtil;
 import com.lowdragmc.lowdraglib.networking.INetworking;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.fml.common.Mod;
 import org.slf4j.Logger;
 
@@ -43,11 +45,13 @@ public class ExampleMod extends MOMod<CommonProxy> {
     }
 
     @Override
+    @OnlyIn(Dist.CLIENT)
     protected CommonProxy createClientProxy() {
         return new ClientProxy();
     }
 
     @Override
+    @OnlyIn(Dist.DEDICATED_SERVER)
     protected CommonProxy createServerProxy() {
         return new CommonProxy();
     }
