@@ -56,3 +56,6 @@ jobs:
         with:
           name: "${{ steps.properties.outputs.mod_name }} ${{ steps.var.outputs.version }}"
           path: build/libs/${{ steps.properties.outputs.mod_id }}-${{ steps.var.outputs.version }}.jar
+
+  gametest:
+    uses: ./.github/workflows/gametest.yml
