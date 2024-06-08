@@ -80,5 +80,4 @@ public class ExampleMod extends MOMod<CommonProxy> {
     public static INetworking network() {
         return instance.getNetwork();
     }
-
 }

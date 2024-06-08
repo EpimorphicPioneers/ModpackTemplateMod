@@ -10,12 +10,8 @@ public class CommonProxy implements ICommonProxyBase {
     }
 
     @Override
-    public void registerEventHandlers() {
-
-    }
+    public void registerEventHandlers() {}
 
     @Override
-    public void registerCapabilities() {
-
-    }
+    public void registerCapabilities() {}
 }
