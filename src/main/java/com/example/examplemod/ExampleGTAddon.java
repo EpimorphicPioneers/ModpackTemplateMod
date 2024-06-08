@@ -11,8 +11,5 @@ public class ExampleGTAddon extends MOGTAddon {
     }
 
     @Override
-    public void initializeAddon() {
-
-    }
-
+    public void initializeAddon() {}
 }

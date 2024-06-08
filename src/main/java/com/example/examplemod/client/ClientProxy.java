@@ -10,5 +10,4 @@ public class ClientProxy extends CommonProxy implements IClientProxyBase {
     public ClientProxy() {
         super();
     }
-
 }
