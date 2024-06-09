@@ -1,6 +1,7 @@
 package com.example.examplemod;
 
 import com.epimorphismmc.monomorphism.MOGTAddon;
+
 import com.gregtechceu.gtceu.api.addon.GTAddon;
 
 @GTAddon
