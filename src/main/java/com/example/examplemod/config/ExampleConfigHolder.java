@@ -1,6 +1,7 @@
 package com.example.examplemod.config;
 
 import com.example.examplemod.ExampleMod;
+
 import dev.toma.configuration.Configuration;
 import dev.toma.configuration.config.Config;
 import dev.toma.configuration.config.format.ConfigFormats;

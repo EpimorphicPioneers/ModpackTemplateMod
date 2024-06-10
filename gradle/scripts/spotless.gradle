@@ -10,12 +10,13 @@ spotless {
     java {
         target 'src/*/java/**/*.java'
 
-        importOrder()
-        removeUnusedImports()
-
         palantirJavaFormat().style("GOOGLE")
         indentWithTabs(2)
         indentWithSpaces(4)
+
+        // Must be after Google Format, see https://github.com/diffplug/spotless/issues/1407
+        importOrderFile("$rootDir/spotless/spotless.importorder")
+        removeUnusedImports()
 
         cleanthat()
         formatAnnotations()

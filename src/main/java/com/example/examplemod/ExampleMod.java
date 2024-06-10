@@ -1,18 +1,23 @@
 package com.example.examplemod;
 
-import com.epimorphismmc.monomorphism.MOMod;
-import com.epimorphismmc.monomorphism.datagen.MOProviderTypes;
-import com.epimorphismmc.monomorphism.registry.registrate.MORegistrate;
 import com.example.examplemod.client.ClientProxy;
 import com.example.examplemod.common.CommonProxy;
 import com.example.examplemod.config.ExampleConfigHolder;
 import com.example.examplemod.data.ExampleLangHandler;
+
+import com.epimorphismmc.monomorphism.MOMod;
+import com.epimorphismmc.monomorphism.datagen.MOProviderTypes;
+import com.epimorphismmc.monomorphism.registry.registrate.MORegistrate;
+
 import com.gregtechceu.gtceu.utils.FormattingUtil;
+
 import com.lowdragmc.lowdraglib.networking.INetworking;
+
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.fml.common.Mod;
+
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file

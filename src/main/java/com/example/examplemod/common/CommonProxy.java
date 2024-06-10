@@ -1,7 +1,8 @@
 package com.example.examplemod.common;
 
-import com.epimorphismmc.monomorphism.proxy.base.ICommonProxyBase;
 import com.example.examplemod.ExampleMod;
+
+import com.epimorphismmc.monomorphism.proxy.base.ICommonProxyBase;
 
 public class CommonProxy implements ICommonProxyBase {
 
