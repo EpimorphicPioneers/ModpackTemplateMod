@@ -47,7 +47,7 @@ dependencies {
     modCompileOnly(forge.theoneprobe) { transitive = false } // TOP
     modImplementation(forge.jade) // Jade
     modImplementation(forge.ae2) { transitive = false } // AE2
-    modImplementation forge.kubejs // KJS
+    modCompileOnly forge.kubejs // KJS
 
     /* -------------------------------------------------- RuntimeOnly -------------------------------------------------- */
 
