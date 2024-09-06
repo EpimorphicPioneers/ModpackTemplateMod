@@ -1,6 +1,7 @@
 package com.example.examplemod;
 
 import com.example.examplemod.client.ExampleModClient;
+
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 

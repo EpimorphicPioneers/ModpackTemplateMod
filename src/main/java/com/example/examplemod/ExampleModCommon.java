@@ -1,8 +1,9 @@
 package com.example.examplemod;
 
-import com.epimorphismmc.monomorphism.integration.registrate.providers.MOProviderTypes;
 import com.example.examplemod.config.ExampleConfigHolder;
 import com.example.examplemod.data.ExampleLangHandler;
+
+import com.epimorphismmc.monomorphism.integration.registrate.providers.MOProviderTypes;
 
 public class ExampleModCommon implements ExampleMod {
 

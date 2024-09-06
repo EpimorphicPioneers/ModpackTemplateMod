@@ -2,8 +2,11 @@ package com.example.examplemod;
 
 import com.epimorphismmc.monomorphism.integration.registrate.MORegistrate;
 import com.epimorphismmc.monomorphism.utility.DistLogger;
+
 import com.gregtechceu.gtceu.utils.FormattingUtil;
+
 import net.minecraft.resources.ResourceLocation;
+
 import org.slf4j.Logger;
 
 public interface ExampleMod {

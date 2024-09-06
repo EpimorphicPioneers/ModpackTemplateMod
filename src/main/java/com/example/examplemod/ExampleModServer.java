@@ -5,5 +5,4 @@ public class ExampleModServer extends ExampleModCommon {
     public ExampleModServer() {
         super();
     }
-
 }

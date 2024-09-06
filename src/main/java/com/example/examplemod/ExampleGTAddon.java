@@ -13,9 +13,7 @@ public class ExampleGTAddon implements IGTAddon {
     }
 
     @Override
-    public void initializeAddon() {
-
-    }
+    public void initializeAddon() {}
 
     @Override
     public String addonModId() {
