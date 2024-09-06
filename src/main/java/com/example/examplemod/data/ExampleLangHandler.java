@@ -1,6 +1,6 @@
 package com.example.examplemod.data;
 
-import com.epimorphismmc.monomorphism.datagen.lang.MOLangProvider;
+import com.epimorphismmc.monomorphism.integration.registrate.providers.MOLangProvider;
 
 public class ExampleLangHandler {
 

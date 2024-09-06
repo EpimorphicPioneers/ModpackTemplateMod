@@ -18,12 +18,12 @@ dependencyResolutionManagement {
 
         // Mod Dependencies Versions
         // Common
-        def jeiVersion = "15.2.0.27"
-        def reiVersion = "12.0.684"
-        def emiVersion = "1.1.4"
-        def ae2Version = "15.0.18"
+        def jeiVersion = "15.12.1.46"
+        def reiVersion = "12.1.725"
+        def emiVersion = "1.1.11"
+        def ae2Version = "15.2.11"
         def kjsVersion = "2001.6.5-build.7"
-        def gtmVersion = "1.2.3.a"
+        def gtmVersion = "1.4.0"
 
         // Forge
         def forgeVersion = "47.2.0"
@@ -39,11 +39,11 @@ dependencyResolutionManagement {
         def architecturyLoomVersion = "1.6-SNAPSHOT"
         def macheteVersion = "1.+"
         def configurationVersion = "2.2.0"
-        def ldLibVersion = "1.0.25.l"
+        def ldLibVersion = "1.0.26.b"
         def mixinextrasVersion = "0.3.2"
-        def shimmerVersion = "0.2.2"
-        def monomorphismLibVersion = "1.0.10-build.17"
+        def shimmerVersion = "0.2.4"
         def spotlessVersion = "7.0.0.BETA1"
+        def monoLibVersion = "1.2.0-build.33"
 
         forge {
             version("forgeShortVersion", forgeVersion)
@@ -93,8 +93,8 @@ dependencyResolutionManagement {
             def gtm = version("gtm", gtmVersion)
             library("gtm", "com.gregtechceu.gtceu", "gtceu-${minecraftVersion}").versionRef(gtm)
 
-            def monomorphismLib = version("monomorphism", monomorphismLibVersion)
-            library("monomorphism", "com.epimorphismmc.monomorphism", "monomorphism-${minecraftVersion}").versionRef(monomorphismLib)
+            def monoLib = version("monomorphism", monoLibVersion)
+            library("monomorphism", "com.epimorphismmc.monomorphism", "monomorphism-${minecraftVersion}").versionRef(monoLib)
         }
 
         libs {
