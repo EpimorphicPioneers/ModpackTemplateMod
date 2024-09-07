@@ -1,12 +1,12 @@
 package com.example.examplemod.config;
 
-import com.example.examplemod.ExampleModCommon;
+import com.example.examplemod.ExampleMod;
 
 import dev.toma.configuration.Configuration;
 import dev.toma.configuration.config.Config;
 import dev.toma.configuration.config.format.ConfigFormats;
 
-@Config(id = ExampleModCommon.MODID)
+@Config(id = ExampleMod.MODID)
 public class ExampleConfigHolder {
     public static ExampleConfigHolder INSTANCE;
 
