@@ -21,7 +21,7 @@ dependencies {
 
     // Mixin Extras
     implementation(annotationProcessor("io.github.llamalad7:mixinextras-common:${this.forge.versions.mixinextras.get()}"))
-    api(include("io.github.llamalad7:mixinextras-forge:${this.forge.versions.mixinextras.get()}"))
+    api("io.github.llamalad7:mixinextras-forge:${this.forge.versions.mixinextras.get()}")
 
     /* -------------------------------------------------- Libraries -------------------------------------------------- */
 
@@ -35,7 +35,7 @@ dependencies {
 
     modCompileOnly(forge.jei.common.api) { transitive = false } // JEI
     modCompileOnly(forge.jei.forge.api) { transitive = false }
-    modImplementation(forge.jei.forge.impl) { transitive = false }
+    modCompileOnly(forge.jei.forge.impl) { transitive = false }
 
     modCompileOnly forge.rei.plugin // REI
     modCompileOnly forge.rei.api
@@ -53,8 +53,8 @@ dependencies {
 
     if (System.getenv("RUN_SERVER") == null) {
         modRuntimeOnly(forge.shimmer.forge) { transitive = false } // Shimmer
-        modRuntimeOnly("maven.modrinth:embeddium:0.2.10+mc1.20.1") // Embeddium
-        modRuntimeOnly("maven.modrinth:oculus:1.20.1-1.6.9") // Oculus
+        modRuntimeOnly("maven.modrinth:embeddium:0.3.19+mc1.20.1") // Embeddium
+        modRuntimeOnly("maven.modrinth:oculus:1.20.1-1.7.0") // Oculus
     }
     //modRuntimeOnly(forge.worldStripper)
 }
