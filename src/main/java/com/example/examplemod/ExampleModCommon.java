@@ -10,10 +10,10 @@ public class ExampleModCommon implements ExampleMod {
     public static ExampleModCommon instance;
 
     public ExampleModCommon() {
-        super();
         instance = this;
         ExampleConfigHolder.init();
         REGISTRATE.addDataGenerator(MOProviderTypes.MO_LANG, ExampleLangHandler::init);
+        REGISTRATE.registerRegistrate();
 
         LOGGER.info("ExampleMod's Initialization Completed!");
     }

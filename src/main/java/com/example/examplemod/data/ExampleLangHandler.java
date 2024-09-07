@@ -4,9 +4,7 @@ import com.epimorphismmc.monomorphism.integration.registrate.providers.MOLangPro
 
 public class ExampleLangHandler {
 
-    private ExampleLangHandler() {
-        /**/
-    }
+    private ExampleLangHandler() {}
 
     public static void init(MOLangProvider provider) {}
 }
